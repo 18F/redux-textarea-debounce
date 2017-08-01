@@ -1,13 +1,15 @@
 {
   "name": "@18f/redux-textarea-debounce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "textarea component whose onchange is debounced, perfect for use in redux apps",
   "repository": {
     "type": "git",
     "url": "https://github.com/18F/redux-textarea-debounce.git"
   },
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "debounce": "^1.0.2",
     "prop-types": "^15.4.0"
