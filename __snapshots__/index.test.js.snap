@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`everything works fine WITH a handler attached 1`] = `
+<textarea
+  onChange={[Function]}
+  value="test string"
+/>
+`;
+
+exports[`everything works fine WITHOUT a handler attached 1`] = `
+<textarea
+  onChange={[Function]}
+  value="test string"
+/>
+`;
