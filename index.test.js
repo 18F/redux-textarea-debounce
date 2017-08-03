@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import TextArea from './index.js';
 
@@ -21,7 +21,7 @@ test('everything works fine WITH a handler attached', () => {
     changeHandlerCalledWith = e;
   };
 
-  const component = shallow(
+  const component = mount(
     <TextArea value="test string" onChange={changeHandler} />
   );
 
@@ -66,7 +66,7 @@ test('everything works fine WITHOUT a handler attached', () => {
     persistCallCount += 1;
   };
 
-  const component = shallow(
+  const component = mount(
     <TextArea value="test string" />
   );
 

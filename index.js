@@ -30,17 +30,19 @@ export default class TextArea extends React.Component {
 
   render() {
     return (
-      <textarea value={this.state.value} onChange={this.changeHandler} />
+      <textarea value={this.state.value} name={this.props.name} onChange={this.changeHandler} />
     );
   }
 }
 
 TextArea.propTypes = {
   value: PropTypes.string,
+  name: PropTypes.string,
   onChange: PropTypes.oneOfType([PropTypes.func, PropTypes.bool])
 };
 
 TextArea.defaultProps = {
   value: '',
+  name: '',
   onChange: false
 };

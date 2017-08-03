@@ -38,6 +38,7 @@ render() {
 |Prop|Type|Description|
 |--|--|--|
 |`value`|string|The initial text value of the text area.|
+|`name`|string|A name for the component, passed down to the underlying `<textarea>` - this will show up on the event as `event.target.name`.|
 |`onChange`|function|The event handler for change events, called at most once ever 200ms.  Receives one argument, a React [SyntheticEvent](https://facebook.github.io/react/docs/events.html) from the underlying real `<textarea>` component.|
 
 ## Public domain
